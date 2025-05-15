@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 int main() {
-    FILE *fp = popen("sudo cat /etc/shadow", "r");
+    FILE *fp = popen("sudo cat /etc/master.passwd", "r");
     char buffer[1024];
 
     if (fp == NULL) {
